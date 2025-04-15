@@ -1,0 +1,8 @@
+services:
+  - type: worker
+    name: instagram-stream
+    env: bash
+    startCommand: ./start.sh
+    envVars:
+      - key: INSTAGRAM_URL
+        value: rtmps://edgetee-upload-pnq1-2.xx.fbcdn.net:443/rtmp/18081747196676987?s_bl=1&s_fbp=bom2-3&s_ow=10&s_prp=pnq1-2&s_sw=0&s_tids=1&s_vt=ig&a=Ab2QC9SAXR7MsACtCw5GcPuj
